@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div class="first-part">
+           <a href="./index.html"><img src="./images/3246c6341656085.671ca48e15a9a-removebg-preview.png" alt="" style=" width: 70px;"></a> 
+        </div>
+        <div class="second-part">
+            <a class="a" href="./index.html">Home</a>
+            <a class="a" href="./cart.html">Cart</a>
+        </div>
+        </header>
+        <div class="backgorund-image">
+        <div class="backgorund-text">
+            <h1>Craving Fresh, Authentic Thai Flavors? </h1>
+            <p>Spice up your day with our handcrafted Thai dishes, made with the freshest ingredients and traditional recipes. From creamy Tom Kha Gai to fiery Pad Thai, every bite is a journey to Thailand!</p>
+        </div>
+    </div>
+
+    <h1>Categories</h1>
+
+<ul>
+  <li onclick="getAllCards()">All</li>
+</ul>
+
+
+
+
+
+<div class="main-all">
+<div class="all">
+    <div class="cutsomSlider">
+      <h3>filter</h3>
+      <div id="spicinessLabel">Spiciness: Not Chosen</div>
+      <input type="range" id="spicinessSlider" min="-1" max="4" value="-1">
+      <br>
+      <div class="checkbox">
+        <input type="checkbox" id="noNutsCheckbox"><label for="">No Nuts</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="vegetarianCheckbox"><label for="">Vegetarian Only</label>
+      </div>
+      <div class="buttonebi">
+        <button id="resetButton">RESET</button> <br>
+        <button id="applyFilterButton">APPLY FILTER</button>
+      </div>
+    </div>
+  
+    <div class="allDishes"></div>
+  </div>
+
+
+    <section class="dishes"></section>
+</div>
+
+
+  <p class="oh">© 2025 | Online Restaurant | All Right Reserved</p>
+    <script src="app.js"></script>
+</body>
+</html>
