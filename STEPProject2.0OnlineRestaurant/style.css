@@ -179,20 +179,11 @@ header{
     width: 270px;
 }
 
-.cards{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    width: 250px;
-    gap: 10px;
-    background-color: #861f00fa;
-    color: white;
-    text-align: center;
-}
+
+
+
+
+
 
 
 
@@ -672,6 +663,9 @@ li:hover {
     .checkout-btn {
         width: 100%;
     }
+    .iname{
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -700,6 +694,7 @@ li:hover {
         font-size: 14px;
         padding: 10px 20px;
     }
+
 }
 
 .cart-item {
@@ -754,4 +749,10 @@ button{
 
 .iname{
     text-align: start;
+}
+
+@media only screen and (max-width:768px){
+    .iname{
+        text-align: center;
+    }
 }
